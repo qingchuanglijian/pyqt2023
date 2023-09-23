@@ -45,6 +45,9 @@ class Ui_CalculateBmi(object):
         self.horizontalLayout_2.addWidget(self.lineEdit_weight)
         self.verticalLayout.addLayout(self.horizontalLayout_2)
         self.pushButton_calculate = QtWidgets.QPushButton(parent=CalculateBmi)
+        self.pushButton_calculate.setStyleSheet("* {\n"
+"    background:rgb(255, 251, 247)\n"
+"}")
         self.pushButton_calculate.setObjectName("pushButton_calculate")
         self.verticalLayout.addWidget(self.pushButton_calculate)
         self.horizontalLayout_3.addLayout(self.verticalLayout)
