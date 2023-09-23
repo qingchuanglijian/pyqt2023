@@ -61,9 +61,7 @@
        <item>
         <widget class="QPushButton" name="pushButton_calculate">
          <property name="styleSheet">
-          <string notr="true">* {
-	background:rgb(255, 251, 247)
-}</string>
+          <string notr="true"/>
          </property>
          <property name="text">
           <string>计算</string>
