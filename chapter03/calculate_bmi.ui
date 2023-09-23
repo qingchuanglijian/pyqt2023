@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CalculateBmi</class>
+ <widget class="QDialog" name="CalculateBmi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>526</width>
+    <height>288</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BMI-C</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>皮重设置.png</normaloff>皮重设置.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+	font-size:14px;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3" stretch="7,3">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="6,4">
+     <property name="spacing">
+      <number>6</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>身高（cm）：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_height"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>体重（kg）：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_weight"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_calculate">
+         <property name="text">
+          <string>计算</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_tips">
+       <property name="styleSheet">
+        <string notr="true">*{
+	font-size:12px;
+}</string>
+       </property>
+       <property name="text">
+        <string>提示：
+1、中国成人居民BM川衡量标准是小于等于18.4为消瘦，18.5-23.9为正常，24-
+27.9为超重，大于等于28为肥胖。
+2、最理想的BM川数值为22，理想体重=22×身高2（米），±10%波动</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_title">
+       <property name="text">
+        <string>您的计算结果：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_result">
+       <property name="text">
+        <string>BMI:27.18属于超重您的理想体重为：68KG</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
