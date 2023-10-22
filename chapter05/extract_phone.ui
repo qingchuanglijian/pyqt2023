@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExtractPhoneNum</class>
+ <widget class="QDialog" name="ExtractPhoneNum">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>503</width>
+    <height>386</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>要素提取工具1.0</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>工具.png</normaloff>工具.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">.QPushButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #f6f7f8, stop: 1 #dadbdc);
+    border-radius: 5px;
+    border: 1px solid #dadbdc;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #e6e7e8, stop: 1 #c8c9ca);
+}
+
+QPushButton:pressed {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #dadbdc, stop: 1 #b0b1b3);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_5">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPlainTextEdit" name="plainTextEdit_input"/>
+     </item>
+     <item>
+      <widget class="QPlainTextEdit" name="plainTextEdit_result"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton_extract">
+         <property name="text">
+          <string>提取手机号</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_email">
+         <property name="text">
+          <string>提取邮箱</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="pushButton_sfz">
+         <property name="text">
+          <string>提取身份证号</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_carnum">
+         <property name="text">
+          <string>提取车牌号码</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QPushButton" name="pushButton_banknum">
+         <property name="text">
+          <string>提取银行卡号</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_ipdir">
+         <property name="text">
+          <string>提取IP地址</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QPushButton" name="pushButton_paste">
+         <property name="text">
+          <string>复制结果</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_clear">
+         <property name="text">
+          <string>清空</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
