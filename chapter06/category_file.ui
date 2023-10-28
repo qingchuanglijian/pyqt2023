@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileCategory</class>
+ <widget class="QDialog" name="FileCategory">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>402</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>文件分类工具</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>文件.png</normaloff>文件.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">.QPushButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #f6f7f8, stop: 1 #dadbdc);
+    border-radius: 5px;
+    border: 1px solid #dadbdc;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #e6e7e8, stop: 1 #c8c9ca);
+}
+
+QPushButton:pressed {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #dadbdc, stop: 1 #b0b1b3);
+}
+
+.QLabel{
+	 font-weight: bold;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLineEdit" name="lineEdit"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_chose_filepath">
+       <property name="text">
+        <string>选择文件夹</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_category_file">
+       <property name="text">
+        <string>整理文件夹</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPlainTextEdit" name="plainTextEdit_result"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
